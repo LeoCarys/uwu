@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para mi Posposito</title>
+    <style>
+        .body{
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body class="body">
+    <h1 class="body__title">¿Puedo ser tu novio?</h1>
+    <img width="50%" src="https://previews.123rf.com/images/vinhsino/vinhsino2305/vinhsino230500575/205482599-ilustración-de-un-lindo-oso-panda-sentado.jpg"/>
+<button id="yes"> Si</button> 
+<button id="no"> No</button>
+
+<script>
+    const buttonSi = document.getElementById("yes");
+    const buttonNo = document.getElementById("no");
+
+    const sifunction = () => {
+        alert("eso eso muerde el cebo, te amo");
+    };
+    const noFunction = () => {
+        buttonNo.style.position="absolute";
+        buttonNo.style.top=(Math.random()* window.innerHeight)+ "px";
+        buttonNo.style.left=(Math.random()* window.innerWidth)+ "px";
+    };
+
+        buttonSi.addEventListener("click", sifunction);
+        buttonNo.addEventListener("click", noFunction);
+</script>
+</body>
+
+
+</html>
